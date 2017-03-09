@@ -1,1 +1,3 @@
-// This is where it all goes :)
+//= require menu
+//= require vertical-tabs
+//= require_tree .

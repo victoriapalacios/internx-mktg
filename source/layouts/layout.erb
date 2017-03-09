@@ -3,17 +3,50 @@
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "InternX" %></title>
 
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <%= stylesheet_link_tag :application %>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   </head>
+  <nav class="nav-bar">
+    <div class="nav-hold">
+      <img class="nav-image" src="images/internx-logo-white.svg">
+      <a id="nav-menu" class="nav-menu">&#9776;</a>
+      <ul class="nav-list" id="nav">
+        <li><a href="#about-me">I'm a Student</a></li>
+        <li><a href="#cat-pictures">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <body class="<%= page_classes %>">
     <%= yield %>
   </body>
+  <footer>
+    <div class="list-group">
+      <ul class="list-contact">
+        <li><img class="logo" src="images/logo-green.svg"></li>
+        <li><img class="contact-icon" src="images/email.svg"><a href=""></a>contact@internx.com</a></li>
+        <li><img class="contact-icon" src="images/phone.svg"><a href=""></a>888-345-2336</a></li>
+      </ul>
+      <ul class="secondary-list">
+        <li><h3>Join</h3></li>
+        <li>Student Sign Up</li>
+      </ul>
+      <ul>
+        <li><h3>Support</h3></li>
+        <li>FAQ</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <hr>
+    <span> © InternX 2017. View our <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>.</span>
+  </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <%= javascript_include_tag "site" %>
 </html>

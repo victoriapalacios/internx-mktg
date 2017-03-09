@@ -1,0 +1,114 @@
+// Base Typography
+// ========================================
+
+html{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @include font-type($primary-sans-serif, normal, normal);
+  font: 100%/1.618;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b {
+  @include font-type($primary-sans-serif, normal, $light);
+  @include rem(margin-bottom, 12px);
+  color: $black-base;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.1;
+}
+
+h2 { font-size: $font-size-base * 2.00; @include media($tablet){ font-size: $font-size-base * 2.75; } }
+h4 { font-size: $font-size-base * 1.50; @include media($tablet){ font-size: $font-size-base * 1.75; } }
+h5 { font-size: $font-size-base * 1.00; @include media($tablet){ font-size: $font-size-base * 1.25; } }
+h6 { font-size: $font-size-base - 2.00; @include media($tablet){ font-size: $font-size-base * 1.00; } }
+
+h1, h2, h3, h4, h5, h6{
+  @include font-type($primary-sans-serif, normal, $light);
+}
+
+h1 {
+  color: $white-base;
+  font-size: $s-bigger;
+  max-width: 786px;
+  @include media($tablet) {
+    font-size: $s-huge;
+  }
+  @include media($tablet-landscape) {
+    font-size: $s-giga;
+  }
+}
+
+h2 {
+  font-size: $s-large;
+}
+
+p {
+  color: $black-base;
+  font-weight: normal;
+  font-style: normal;
+  @include font-type($primary-sans-serif, normal, normal);
+  font-size: $s-small;
+  @include rem(margin-bottom, 12px);
+  line-height: $base-line-height;
+
+  &:last-child { @include rem(margin-bottom, 0); }
+}
+
+li,
+dd{
+  color: $black-base;
+  @include font-type($primary-sans-serif, normal, normal);
+  line-height: $base-line-height;
+  list-style: none;
+}
+
+a {
+  color: $black-base;
+  font-weight: $bold;
+  @include font-type($primary-sans-serif, normal, normal);
+  @include transition(all 0.3s ease-in-out);
+  text-decoration: none;
+
+  &:hover {
+    color: $blue-dark;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+strong, b { font-weight: $bold; }
+i, em { font-style: italic; }
+
+blockquote{
+  font-style: italic;
+  @include s-big;
+  line-height: 1.3;
+
+  @include media($tablet){
+    @include s-large;
+    line-height: 1.2;
+  }
+}
+
+cite{
+  display: inline-block;
+  @include rem(margin-top, 20px);
+}

@@ -1,0 +1,71 @@
+/* WIDTH SETTING */
+.nav-hold {
+  width: 95%;
+  //max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  width: 100%;
+  background: $green-base
+}
+
+.nav-hold {
+  overflow: hidden;
+}
+
+.nav-image {
+  float:    left;
+  display:  block;
+  color:    #f9f9f9;
+  @include rem(margin, 15px);
+  width: 120px;
+}
+
+.nav-list {
+  float: right;
+}
+
+.nav-list li {
+  float: left;
+}
+
+.nav-list li a {
+  display:  block;
+  padding:  20px 15px;
+  color:    #f9f9f9;
+  font-weight: bold;
+}
+
+.nav-menu {
+  color:    #f9f9f9;
+  float:    right;
+  padding:  20px 10px;
+  display:  none;
+  cursor:   pointer;
+}
+
+@media (max-width: 700px) {
+  .nav-menu {
+    display:  block;
+  }
+
+  .nav-list {
+    /*float: left;*/
+    width:    100%;
+    height:   0;
+  }
+
+  .nav-open {
+    height: auto;
+  }
+
+  .nav-list li {
+    width:    100%;
+  }
+
+  .nav-list li a {
+    padding:  10px 10px;
+  }
+
+}

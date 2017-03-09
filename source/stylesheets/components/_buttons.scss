@@ -1,0 +1,58 @@
+// Buttons Component Styles
+// ========================================
+
+// Main Button
+.button {
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px 0px rgba(140,140,140,0.50);
+  display: inline-block;
+  @include font-type($primary-sans-serif, normal, $bold);
+  @include rem(padding, 12px 18px);
+  @include rem(margin-top, 15px);
+  @include s-medium;
+  @include transition (all 0.3s ease-in-out);
+  line-height: normal;
+  text-align: center;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  color: $white-base;
+  font-size: $s-small;
+  letter-spacing: 1px;
+
+  text{
+    align: center;
+    decoration: none;
+  }
+
+  &:hover{ cursor: pointer; }
+
+  &:focus{
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.button-primary {
+  background-image: linear-gradient(-180deg, #4AC346 2%, #35AA31 98%);
+  background-color: $green-base;
+  box-shadow: 0 16px 32px 0 rgba(9, 73, 7, .1);
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: translateY(-7px);
+    color: $white-base;
+  }
+}
+
+.button-secondary {
+  background-image: linear-gradient(-180deg, #6BC2FF 2%, #6BB8EE 98%);
+  background-color: $blue-base;
+  box-shadow: 0 16px 32px 0 rgba(9, 73, 7, .1);
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: translateY(-7px);
+    color: $white-base;
+  }
+  }

@@ -1,0 +1,83 @@
+// Footer
+// ========================================
+
+/*-----------------------
+Footer
+-----------------------*/
+footer {
+  background-color: $grey-darker;
+  padding: 50px;
+
+  .logo {
+    width: 100px;
+    @include rem(margin-bottom, 20px);
+  }
+
+  a, li, span {
+    color: $grey-light;
+
+  }
+
+  .contact-icon {
+    width: 25px;
+    @include rem(margin-right, 10px);
+  }
+
+  .list-contact {
+    .contact-icon, a {
+      vertical-align: middle;
+    }
+
+    li {
+      @include rem(margin-bottom, 10px);
+    }
+  }
+
+  h3 {
+    color: $white-base;
+    text-transform: uppercase;
+    font-weight: $bold;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    @include rem(margin-bottom, 50px);
+  }
+
+  span {
+    font-weight: $bold;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin-bottom: -20px;
+
+    a {
+      color: $green-base;
+      font-weight: $bold;
+    }
+  }
+
+  hr {
+    @include rem(margin, 0 -50px 25px);
+    color: $grey-light;
+    border-top: none;
+    opacity: .3;
+  }
+
+  ul {
+    @include media($tablet-landscape) {
+      display: inline-block;
+      vertical-align: top;
+      @include rem(margin, 0 50px 50px);
+    }
+  }
+
+  .list-group {
+    text-align: center;
+  }
+
+  li {
+    text-align: left;
+  }
+}
