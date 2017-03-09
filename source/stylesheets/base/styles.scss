@@ -200,15 +200,20 @@
   .icon {
     display: none;
     @include media($tablet-landscape) {
-      width: 25px;
+      width: 40px;
       position: absolute;
+      margin: 195px 0 0 -22px;
     }
   }
 
   .photo {
     display: none;
     @include media($tablet-landscape) {
-      width: 34%
+      display: block;
+      background-image: url("../images/form-image.jpg");
+      background-size: cover;
+      width: 34%;
+      height: 430px;
     }
   }
 
@@ -217,6 +222,7 @@
     @include rem(padding, 35px);
     @include media($tablet-landscape) {
       width: 65%;
+      height: 430px;
     }
   }
 

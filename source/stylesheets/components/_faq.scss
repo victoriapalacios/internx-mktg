@@ -1,0 +1,74 @@
+.faq {
+  .landing {
+    height: 290px;
+  }
+
+  h2 {
+    @include rem(margin-top, 100px);
+    font-weight: $bold;
+    text-align: center;
+    a {
+      color: $green-base;
+      font-weight: $bold;
+    }
+  }
+
+  .questions {
+    @include rem(margin, 0 20px);
+    display: block;
+    @include media($tablet) {
+      max-width: 700px;
+      margin: 0 auto;
+    @include rem(margin-bottom, 100px);
+    }
+
+
+      .faq-c {
+      border-bottom: 1px dotted #ccc;
+      padding: 1em 0;
+    }
+
+    .faq-t {
+      line-height: 1em;
+      color: #aaa;
+      font-family: sans-serif;
+      float:left;
+      font-weight: 700;
+      padding-right: 0.3em;
+      -webkit-transition: all 200ms;
+      -moz-transition: all 200ms;
+      transition: all 200ms;
+    }
+
+    .faq-o {
+      transform: rotate(-45deg);
+      transform-origin: 50% 50%;
+      -ms-transform: rotate(-45deg);
+      -ms-transform-origin: 50% 50%;
+      -webkit-transform: rotate(-45deg);
+      -webkit-transform-origin: 50% 50%;
+      -webkit-transition: all 200ms;
+      -moz-transition: all 200ms;
+      transition: all 200ms;
+    }
+
+    .faq-q {
+      cursor: pointer;
+      font-size: 1.5em;
+      font-weight: 100;
+    }
+
+    .faq-a {
+      clear: both;
+      color: #666;
+      display: none;
+      padding-left: 1.5em;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      @include rem(margin-top, 26px);
+    }
+  }
+}
