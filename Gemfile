@@ -12,3 +12,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '~> 4.2'
 gem 'middleman-livereload', '~> 3.4'
 gem 'middleman-sprockets', '~> 4.0.0.rc.1'
+gem 'middleman-gh-pages'
+gem 'rake'
