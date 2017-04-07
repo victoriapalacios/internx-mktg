@@ -1,0 +1,23 @@
+{
+  "name": "internx-marketing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-dev": "node server.js dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaunchPadLab/internx-marketing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaunchPadLab/internx-marketing/issues"
+  },
+  "homepage": "https://github.com/LaunchPadLab/internx-marketing#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

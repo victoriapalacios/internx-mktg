@@ -1,7 +1,15 @@
-# internx-marketing
+Internx Marketing Site
+----------------------
 
-## Deploy Site (https://github.com/edgecase/middleman-gh-pages)
+Visit [theinternx.com](https://theinternx.com)
 
-    rake build
-    
-    rake publish
+### Local
+1. `gem install middleman`
+2. `bundle exec middleman server`
+
+### Production
+
+1. `rake build`
+2. `git push production master`
+
+You can verify the production settings with `npm run start-dev`.
