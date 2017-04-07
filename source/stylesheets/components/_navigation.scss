@@ -18,8 +18,8 @@
   float:    left;
   display:  block;
   color:    #f9f9f9;
-  @include rem(margin, 15px);
-  width: 120px;
+  @include rem(margin, 15px 15px 15px 4px);
+  width: 160px;
 }
 
 .nav-list {
@@ -32,7 +32,7 @@
 
 .nav-list li a {
   display:  block;
-  padding:  20px 15px;
+  padding:  30px 15px 20px;
   color:    #f9f9f9;
   font-weight: bold;
 }
@@ -43,6 +43,7 @@
   padding:  20px 10px;
   display:  none;
   cursor:   pointer;
+  font-size: 40px;
 }
 
 @media (max-width: 700px) {

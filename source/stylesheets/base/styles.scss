@@ -1,7 +1,7 @@
 .landing {
   background-image: url("../images/landing-mobile.jpg");
   background-size: cover;
-  margin-top: -62px;
+  margin-top: -82px;
   height: 350px;
   @include rem(padding, 20px);
   @include media($tablet) {
