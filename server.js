@@ -1,5 +1,6 @@
 var express = require('express'),
-    app = express();
+    app = express(),
+    dir = [__dirname, 'build'].join('/')
 
 var isDev = process.argv[2] === 'dev'
 
@@ -15,16 +16,16 @@ if (!isDev){
 }
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html')
+  res.sendFile(dir + '/index.html')
 })
 
 app.get('/faq', function(req, res){
-  res.sendFile(__dirname + '/faq.html')
+  res.sendFile(dir + '/faq.html')
 })
 
-app.use('/javascripts', express.static(__dirname + '/javascripts'));
-app.use('/images', express.static(__dirname + '/images'));
-app.use('/stylesheets', express.static(__dirname + '/stylesheets'));
+app.use('/javascripts', express.static(dir + '/javascripts'));
+app.use('/images', express.static(dir + '/images'));
+app.use('/stylesheets', express.static(dir + '/stylesheets'));
 
 app.set('port', process.env.PORT || 8100);
 
