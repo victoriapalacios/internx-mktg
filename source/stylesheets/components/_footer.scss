@@ -9,8 +9,8 @@ footer {
   padding: 50px;
 
   .logo {
-    width: 100px;
-    @include rem(margin-bottom, 20px);
+    width: 160px;
+    @include rem(margin, 0 0 10px -5px);
   }
 
   a, li, span {
