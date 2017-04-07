@@ -12,4 +12,8 @@ Visit [theinternx.com](https://theinternx.com)
 1. `rake build`
 2. `git push production master`
 
-You can verify the production settings with `npm run start-dev`.
+You can verify the production settings with:
+
+1. `npm install`
+2. `npm run start-dev`
+3. Navigate to `localhost:8100`
