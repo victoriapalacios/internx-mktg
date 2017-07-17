@@ -36,6 +36,26 @@
   }
 }
 
+.logos {
+  background-color: $grey-base;
+  text-align: center;
+  margin-top: 150px;
+
+  h2 {
+    padding-top: 50px;
+  }
+
+  li {
+    max-width: 30%;
+    padding: 0;
+    display: inline-block;
+    @include media($tablet) {
+      max-width: 20%;
+      @include rem(padding, 0 20px);
+    }
+  }
+}
+
 .how-it-works {
   @include rem(margin, 50px 20px);
   text-align: center;
