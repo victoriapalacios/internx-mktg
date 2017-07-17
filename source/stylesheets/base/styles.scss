@@ -42,7 +42,8 @@
   margin-top: 150px;
 
   h2 {
-    padding-top: 50px;
+    padding: 50px 30px 0;
+    color: $grey-darker;
   }
 
   li {
@@ -52,6 +53,24 @@
     @include media($tablet) {
       max-width: 20%;
       @include rem(padding, 0 20px);
+    }
+  }
+
+  #rectangle {
+    display: none;
+    @include media($tablet-landscape) {
+      display: block;
+      width: 20%;
+      height: 1.5px;
+      background-color: $grey-dark;
+      vertical-align: super;
+      border-radius: 1px;
+    }
+  }
+
+  .recruiter-headline {
+    #rectangle, h2 {
+      display: inline-block;
     }
   }
 }
