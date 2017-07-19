@@ -36,6 +36,45 @@
   }
 }
 
+.logos {
+  background-color: $grey-base;
+  text-align: center;
+  margin-top: 150px;
+
+  h2 {
+    padding: 50px 30px 0;
+    color: $grey-darker;
+  }
+
+  li {
+    max-width: 30%;
+    padding: 0;
+    display: inline-block;
+    @include media($tablet) {
+      max-width: 20%;
+      @include rem(padding, 0 20px);
+    }
+  }
+
+  #rectangle {
+    display: none;
+    @include media($tablet-landscape) {
+      display: block;
+      width: 20%;
+      height: 1.5px;
+      background-color: $grey-dark;
+      vertical-align: super;
+      border-radius: 1px;
+    }
+  }
+
+  .recruiter-headline {
+    #rectangle, h2 {
+      display: inline-block;
+    }
+  }
+}
+
 .how-it-works {
   @include rem(margin, 50px 20px);
   text-align: center;
