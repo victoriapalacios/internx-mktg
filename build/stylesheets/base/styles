@@ -138,7 +138,22 @@ Backtrace:
 /Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
 /Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/middleman-cli-4.2.1/bin/middleman:70:in `<top (required)>'
 /Users/victoriapalacios/.rbenv/versions/2.2.3/bin/middleman:23:in `load'
-/Users/victoriapalacios/.rbenv/versions/2.2.3/bin/middleman:23:in `<main>'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/bin/middleman:23:in `<top (required)>'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/cli/exec.rb:74:in `load'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/cli/exec.rb:74:in `kernel_load'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/cli/exec.rb:27:in `run'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/cli.rb:335:in `exec'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/cli.rb:20:in `dispatch'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/cli.rb:11:in `start'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/exe/bundle:32:in `block in <top (required)>'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/lib/bundler/friendly_errors.rb:121:in `with_friendly_errors'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.14.4/exe/bundle:24:in `<top (required)>'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/bin/bundle:23:in `load'
+/Users/victoriapalacios/.rbenv/versions/2.2.3/bin/bundle:23:in `<main>'
 */
 body:before {
   white-space: pre;
