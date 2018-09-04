@@ -229,12 +229,12 @@ cite {
     padding: 50px 30px 0;
     color: #464646; }
   .logos li {
-    max-width: 30%;
+    max-width: 20%;
     padding: 0;
     display: inline-block; }
     @media screen and (min-width: 45em) {
       .logos li {
-        max-width: 20%;
+        max-width: 17%;
         padding: 0 20px;
         padding: 0 1.42857rem; } }
   .logos #rectangle {
